@@ -20,6 +20,7 @@ def calculate_convex_hull(point_list: List[Point]) -> List[Point]:
     This method returns a list of points which is in the right order such that, when these points are connected with
     their neighboring points in the list that it will be the convex hull of the given point_list.
     This method uses the Grahams scan method to calculate the convex hull.
+    This method will also show the calculated convex hull using matplotlib.
     """
     if len(point_list) == 0:
         return []
