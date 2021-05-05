@@ -3,4 +3,5 @@ This project is made using python.
 
 
 Here is a demo of the Graham's scan algorithm:
-https://user-images.githubusercontent.com/48204700/117156986-7e57b200-adbe-11eb-86dd-3d7af2c7841a.mp4
+![Figure 1 2021-05-05 16-01-14_Trim](https://user-images.githubusercontent.com/48204700/117159825-e3aca280-adc0-11eb-8cf4-fd49a7c9b077.gif)
+
