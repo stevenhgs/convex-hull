@@ -1,4 +1,6 @@
-from drawing import *
+from typing import List
+import Point
+import drawing
 
 
 def get_lowest_point(point_list: List[Point]) -> Point:
@@ -25,7 +27,7 @@ def calculate_convex_hull(point_list: List[Point]) -> List[Point]:
     if len(point_list) == 0:
         return []
     else:
-        draw_dynamically(point_list, [], 0.1)
+        drawing.draw_dynamically(point_list, [], 0.1)
         lowest_point = get_lowest_point(point_list)
         reference_point = Point(lowest_point.get_x() + 1, lowest_point.get_y())
         sorted_point_list = sorted(point_list, key=lambda point: lowest_point.calculate_angle(reference_point, point))
@@ -36,15 +38,15 @@ def calculate_convex_hull(point_list: List[Point]) -> List[Point]:
 
             while not stack[-1].turns_left(stack[-2], current_point):
                 stack.pop()
-                draw_dynamically(point_list, stack)
+                drawing.draw_dynamically(point_list, stack)
 
             stack.append(current_point)
-            draw_dynamically(point_list, stack)
+            drawing.draw_dynamically(point_list, stack)
 
         stack.append(lowest_point)
-        draw_set_of_points(point_list)
-        draw_set_of_lines(stack)
-        draw()
+        drawing.draw_set_of_points(point_list)
+        drawing.draw_set_of_lines(stack)
+        drawing.draw()
         return stack
 
 

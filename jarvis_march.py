@@ -1,6 +1,7 @@
-from typing import Tuple
-from Point import *
-from drawing import *
+from typing import Tuple, List
+import math
+import Point
+import drawing
 
 
 def get_lowest_and_highest_point(point_list: List[Point]) -> Tuple[Point, Point]:
@@ -64,8 +65,8 @@ def calculate_convex_hull(point_list: List[Point]) -> List[Point]:
             if current_point.__eq__(highest_point):
                 passed_highest_point = True
 
-        draw_set_of_points(point_list)
-        draw_set_of_lines(result)
-        draw()
+        drawing.draw_set_of_points(point_list)
+        drawing.draw_set_of_lines(result)
+        drawing.draw()
 
         return result
