@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import Tuple, List
 import math
 import Point
@@ -45,9 +46,9 @@ def calculate_convex_hull(point_list: List[Point]) -> List[Point]:
 
             # constructing reference point
             if passed_highest_point:
-                reference_point = Point(current_point.get_x() - 1, current_point.get_y())
+                reference_point = Point.Point(current_point.get_x() - 1, current_point.get_y())
             else:
-                reference_point = Point(current_point.get_x() + 1, current_point.get_y())
+                reference_point = Point.Point(current_point.get_x() + 1, current_point.get_y())
 
             # getting point with smallest angle compared to current_point and reference_point
             smallest_angle = 2*math.pi

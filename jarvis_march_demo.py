@@ -1,4 +1,4 @@
-import Point
+from Point import Point
 import drawing
 import jarvis_march
 
