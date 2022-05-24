@@ -1,6 +1,6 @@
 from __future__ import annotations
-import Point
-import drawing
+from Classes import Point
+from drawing import drawing
 
 
 def get_lowest_point(point_list: list[Point]) -> Point:

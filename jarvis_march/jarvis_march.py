@@ -1,8 +1,7 @@
 from __future__ import annotations
-from typing import Tuple, List
 import math
-import Point
-import drawing
+from Classes import Point
+from drawing import drawing
 
 
 def get_lowest_and_highest_point(point_list: list[Point]) -> tuple[Point, Point]:

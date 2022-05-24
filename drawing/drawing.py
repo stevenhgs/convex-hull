@@ -1,7 +1,6 @@
 from __future__ import annotations
-from typing import List
 import matplotlib.pyplot as plt
-import Point
+from Classes.Point import Point
 
 
 def draw_set_of_points(point_list: list[Point]) -> None:
