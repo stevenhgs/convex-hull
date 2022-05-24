@@ -106,7 +106,7 @@ class Point:
             return False
 
     @staticmethod
-    def generate_random_point_point_list(number_of_points: int, max_coordinate: float, min_coordinate: float) -> List[Point]:
+    def generate_random_point_point_list(number_of_points: int, max_coordinate: float, min_coordinate: float) -> list[Point]:
         """
         This method generates a list of n random Points, with n equals number_of_points.
         The x and y value of these points is randomly chosen between the given max_coordinate and min_coordinate.

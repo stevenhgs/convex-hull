@@ -5,7 +5,7 @@ import Point
 import drawing
 
 
-def get_lowest_and_highest_point(point_list: List[Point]) -> Tuple[Point, Point]:
+def get_lowest_and_highest_point(point_list: list[Point]) -> tuple[Point, Point]:
     """
     This method returns the lowest point and the highest point in the points_list.
     """
@@ -28,7 +28,7 @@ def get_lowest_and_highest_point(point_list: List[Point]) -> Tuple[Point, Point]
     return lowest_point, highest_point
 
 
-def calculate_convex_hull(point_list: List[Point]) -> List[Point]:
+def calculate_convex_hull(point_list: list[Point]) -> list[Point]:
     """
     This method returns a list of points which is in the right order such that, when these points are connected with
     their neighboring points in the list that it will be the convex hull of the given point_list.

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import Point
 
 
-def draw_set_of_points(point_list: List[Point]) -> None:
+def draw_set_of_points(point_list: list[Point]) -> None:
     """
     This method draws the points in point_list using a red color.
     """
@@ -12,7 +12,7 @@ def draw_set_of_points(point_list: List[Point]) -> None:
         plt.plot(point.get_x(), point.get_y(), 'ro')
 
 
-def draw_set_of_points_in_blue(point_list: List[Point]) -> None:
+def draw_set_of_points_in_blue(point_list: list[Point]) -> None:
     """
     This method draws the points in point_list using a red color.
     """
@@ -20,7 +20,7 @@ def draw_set_of_points_in_blue(point_list: List[Point]) -> None:
         plt.plot(point.get_x(), point.get_y(), 'bo')
 
 
-def draw_set_of_lines(sequence_of_points: List[Point]) -> None:
+def draw_set_of_lines(sequence_of_points: list[Point]) -> None:
     """
     This method draws lines between two neighboring points in sequence_of_points.
     """
@@ -40,7 +40,7 @@ def draw() -> None:
     plt.draw()
 
 
-def draw_dynamically(point_list: List[Point], sequence_of_points: List[Point], pause=0.1) -> None:
+def draw_dynamically(point_list: list[Point], sequence_of_points: list[Point], pause=0.1) -> None:
     """
     This method is used to draw and show how grahams scan works.
     """
